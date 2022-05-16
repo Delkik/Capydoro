@@ -1,0 +1,45 @@
+.container{
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background: #151718;
+    padding: 0.5rem 0;
+}
+
+.profile{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 2px solid #2881D9;
+}
+
+.navigation{
+    width: 40%;
+}
+
+.notificationSettings{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.notificationSettings svg{
+    stroke-width: 1.5;
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        background: #1D2021;
+        padding: 0rem 2rem;
+        grid-column: 1/-1;
+    }
+
+    .navigation{
+        display: block;
+    }
+}

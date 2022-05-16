@@ -1,0 +1,48 @@
+.levelContainer{
+    position: relative;
+    max-width: 20rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.levelContainer::before{
+    content: '';
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    z-index: -1;
+    background: url('../../images/capybara-pomo.png');
+    background-size: cover;
+}
+
+
+.levelContainer .circle{
+    position: relative;
+    stroke: rgb(199, 5, 5);
+    filter: url('#glow');
+    transition: stroke-dashoffset 1.5s ease;
+}
+
+@media screen and (min-width: 1200px){
+    .levelContainer{
+        grid-column: 1;
+    }
+}
+
+/* 
+@keyframes circle {
+    0%{
+        stroke-dashoffset: 785.3981633974;
+    }
+
+    100%{
+        stroke-dashoffset: 0;
+    }
+} */
+
+/* 589.0486225481 */
+/* rgb(199, 5, 5) */
+
+/* rgb(204, 20, 20) */

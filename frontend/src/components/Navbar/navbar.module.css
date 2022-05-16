@@ -1,0 +1,45 @@
+.navContainer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1D2021;
+    border-radius: 20px 20px 0 0;
+    padding: 0 2rem;
+}
+
+.navContainer button:not(.navNewTaskButton){
+    background: none;
+    border: none;
+}
+
+.navNewTaskButton{
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+    .navContainer{
+        position: relative;
+    }
+
+    .navNewTaskButton{
+        display: none;
+    }
+
+    .navContainer button svg{
+        width: 35px;
+        height: 35px;
+        stroke-width: 1;
+    }
+}

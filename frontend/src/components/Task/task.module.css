@@ -1,0 +1,48 @@
+.taskContainer{
+    width: 100%;
+    background: #1C1E1F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 1rem;
+    gap: 1rem;
+    border-radius: 6px;
+}
+
+.taskInfo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskInfo h2{
+    max-width: 15rem;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.status{
+    background: var(--statusColor);
+    box-shadow: 0 0 8px var(--statusColor);
+}
+
+.taskDue{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #737A7E;
+    font-size: 0.825rem;
+}
+
+.taskDue p{
+    margin: 0;
+}
